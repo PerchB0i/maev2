@@ -14,7 +14,7 @@ public class DatabaseConnection {
         try {
             connection = DriverManager.getConnection(
                     "jdbc:sqlite:test.sqlite");
-            System.out.println("Connected\n");
+            System.out.println("Connected");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -23,7 +23,7 @@ public class DatabaseConnection {
     public void disconnect() {
         try {
             connection.close();
-            System.out.println("Disconnected\n");
+            System.out.println("Disconnected");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
